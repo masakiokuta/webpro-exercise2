@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Webプログラミング 演習２</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<header>
+    <h1>Webプログラミング 演習２</h1>
+    <p>このWebページは、日本大学文理学部情報科学科の講義「Webプログラミング」の演習課題として作成されたものである。</p>
+</header>
+
+<body>
+    <div class="element">
+        <h7>br要素</h7>
+        <ul>
+            <li>br要素とは</li>
+            <p>br要素とは文章を、強制的に改行するために用いる要素である。br要素の直後で、文章が改行される。</p>
+            <li>マークアップ例</li>
+            <p>hello everyone!!という文章の中で、単語の間に&lt;br&gt;を入れる。</p>
+            <div class="code">
+                <code>hello<span>&lt;br&gt;</span>everyone!!</code>
+            </div>
+            <li>実行結果</li>
+            <p>hello <br>everyone!!</p>
+            <p>そうすると、上記のように、<span>&lt;br&gt;</span>の位置で、文章が改行され、次の行へ移る。なお、br要素で行う処理は改段落ではない。</p>
+            <p>改段落をしたい場合は、br要素ではなく、新しく&lt;p&gt;タグで次の文章を囲うのが良い。</p>
+        </ul>
+    </div>
+    <div class="element">
+        <h7>i要素</h7>
+        <ul>
+            <li>i要素とは</li>
+            <p>i要素とは、文章中で、一部分をイタリック体で表示するために用いる要素である。日本語の文章ではあまり用いられないが、英語などの、アルファベットを用いる言語では、強調の意味で用いられる。</p>
+            <p>また、曲、映画などの作品のタイトルも、イタリック体で表記されることが多い。</p>
+            <li>マークアップ例</li>
+            <p>"Hello everyone!! This Website is an exercise in my university."という文章中で、「exercise」という単語を&lt;i&gt;タグで囲ってみる。
+            </p>
+            <div class="code">
+                <code>Hello everyone!! This Website is an <span>&lt;i&gt;</span>exercise<span>&lt;/i&gt;</span> in my university.</code>
+            </div>
+            <li>実行結果</li>
+            <p>Hello everyone!! This Website is an <i class="ex">exercise</i> in my university.</p>
+            <p>そうすると、上記のように、&lt;i&gt;タグに囲まれた部分の文字が、斜体となって表示される。</p>
+        </ul>
+    </div>
+    <div class="element">
+        <h7>blockquote要素</h7>
+        <ul>
+            <li>blockquote要素とは</li>
+            <p>blockquote要素とは、文章の引用を行う際に、引用をした範囲を示すために用いる要素である。</p>
+            <li>マークアップ例</li>
+            <p>例えば、エルトンジョンの"<i>Your Song</i>"の歌詞の引用を行いたいとする。</p>
+            <p>引用したい歌詞の部分を<span>&lt;blockquote&gt;</span>タグで囲む。</p>
+            <div class="code"><code>
+                <span>&lt;blockquote&gt;</span>"And you can tell everybody, this is your song. It may be suite simple but now it's done.<br> I hope you don't mind, I hope you don't mind that I put down in words.<br> How wonderful life is while you're in the world."<span>&lt;/blockquote&gt;</span>
+            </code></div>
+            <li>実行結果</li>
+            <blockquote>
+                <p>"And you can tell everybody, this is your song. It may be suite simple but now it's done.<br> I hope you don't mind, I hope you don't mind that I put down in words.<br> How wonderful life is while you're in the world."</p>
+            </blockquote>
+            <figcaption>-Elton johon,<cite>Your Song</cite></figcaption>
+            <p>上記のように、引用部を、ひとまとまりの文章として表現するのに適している。</p>
+        </ul>
+    </div>
+    <div class="references">
+        <p>参考文献</p>
+        <ul>
+            <li>
+                <a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/br">MDN Web Docs：br要素</a>
+            </li>
+            <li>
+                <a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/i">MDN Web Docs：i要素</a>
+            </li>
+            <li>
+                <a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/blockquote">MDN Web Docs：blockquupte要素</a>
+            </li>
+        </ul>
+    </div>
+</body>
+<footer>
+    &copy;5420085 奥田真輝
+</footer>
+
+</html>
